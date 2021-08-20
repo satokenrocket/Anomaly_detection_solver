@@ -40,7 +40,7 @@
                             測ることが出来ます
 - break_even_point.png      閾値ごとの正常標本精度、異常標本精度を算出し一つのグラフとして可視化されます。
                             
-<img src='./output/P-1/detection_ratio.png' width='400px'/> <img src='./output/P-1/recall_.png' width='400px'/>
+<img src='./output/P-1/detection_ratio.png' width='400px'/> <img src='./output/P-1/recall.png' width='400px'/>
 <img src='./output/P-1/Fscore.png' width='400px'/><img src='./output/P-1/ROC.png' width='400px'/> 
 <img src='./output/P-1/break_even_point.png' width='400px'/>
 
