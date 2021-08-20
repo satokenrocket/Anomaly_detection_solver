@@ -246,43 +246,9 @@ def main():
 
 def train(X_tra, Y_tra, w, batch_size, epochs, NUM_CELLS):
 # ここに試したい深層学習のモデルを構築--------------------------------
-# # alpha = 5
-    ip = Input(shape=X_tra.shape[1:])
-    x = LSTM(NUM_CELLS)(ip)
-    x = Dropout(0.8)(x)
-
-    y = Permute((2, 1))(ip)
-    y = Conv1D(128, 8, padding='same', kernel_initializer='he_uniform')(y)
-    y = BatchNormalization()(y)
-    y = Activation('relu')(y)
-
-    y = Conv1D(256, 5, padding='same', kernel_initializer='he_uniform')(y)
-    y = BatchNormalization()(y)
-    y = Activation('relu')(y)
-
-    y = Conv1D(128, 3, padding='same', kernel_initializer='he_uniform')(y)
-    y = BatchNormalization()(y)
-    y = Activation('relu')(y)
-
-    y = GlobalAveragePooling1D()(y)
-
-    x = concatenate([x, y])
-
-    # Y_tra.shape[1]=5
-    out = Dense(Y_tra.shape[1], activation='softmax')(x)
-  
-    model = Model(ip, out)
-    model.summary()
-
-
-    model.compile(loss='categorical_crossentropy',
-                  optimizer = Adam(lr=0.0001, amsgrad=True),
-                  metrics=['accuracy'])
-
-    early_stopping = EarlyStopping(patience=0, verbose=1) 
-    # history = model.fit(X_tra, Y_tra, batch_size=32, epochs=50, validation_data=(X_tra, Y_tra), verbose=True)
-    # history = model.fit(X_tra, Y_tra, batch_size = batch_size, epochs = epochs, verbose=True)
-    history = model.fit(X_tra, Y_tra, batch_size = batch_size, epochs = epochs, verbose=True)
+#
+#
+#
 # 
 #-------------------------------------------------------------------  
 
