@@ -66,9 +66,6 @@
 - Pythonではじめる機械学習 ―scikit-learnで学ぶ特徴量エンジニアリングと機械学習の基礎　Andreas C. Muller、Sarah Guido　著、中田 秀基　訳
 - 入門 機械学習による異常検知―Rによる実践ガイド　井手 剛 IBM ワトソン研究所 博士（理学） 著
 
+# Lisence
 
-
-## 注意点
-私は現在大学院に所属しPythonを学んで1年という身です。プログラムの構成また異常検知の理論の理解の浅い点が多いと考えています。本プログラムを通じてご教授頂ければ幸いです。
-
-また本プログラムの妥当性や結果に関する判断は、使用者が行うべきものであり、私個人ははその結果に関してどのような形でも責任を負い兼ねます。ご理解のほどよろしくお願いいたします。
+This project is licensed under the MIT License, see the LICENSE.txt file for details
